@@ -1,0 +1,25 @@
+@theme "/home/zeakz/.config/rofi/themes/simple-theme.rasi"
+@import "/home/zeakz/.config/rofi/themes/simple-theme.rasi"
+configuration {
+    modi: "drun, -modi  :'/home/zeakz/.config/rofi/rofi-time', p:'/home/zeakz/.config/rofi/rofi-power-menu'";
+    width: 33;
+    lines: 1;
+    columns: 1;
+    location: 2;
+    terminal: "xfce4-terminal";
+    run-shell-command: "{terminal} -e {cmd}";
+    case-sensitive: false;
+    cycle: false;
+    sidebar-mode: true;
+    auto-select: false;
+    matching: "regex";
+    hide-scrollbar: true;
+    fullscreen: false; 
+    window-format: "{w:0} {n:0} {t:0}";
+    click-to-exit: true;
+    show-match: true;
+    max-history-size: 20;
+    display-run: "⏻";
+    display-drun: "";
+}
+
