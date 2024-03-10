@@ -1,0 +1,39 @@
+
+
+gaps inner                                       0
+gaps outer                                       0
+smart_borders off
+default_border                                   pixel 2
+
+# Set the font for window titles
+font FiraSans Nerd Font 10
+
+# Define title format for windows
+for_window [shell="xdg_shell"] title_format "%title (%app_id)"
+for_window [shell="x_wayland"] title_format "%class - %title"V
+
+# Set border and radius for windows with rounded corners
+for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border radius 2
+for_window [app_id="^.*"] border pixel 2
+for_window [app_id="^.*"] border radius 2
+
+# Set opacity for all windows
+set $opacity 1
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
+
+# Define colors for different window states
+client.focused           #FFFFFF    #FFFFFF #FFFFFF  #FFFFFF #FFFFFF
+client.focused_inactive   #000000 #000000 #000000 #000000
+client.unfocused         #000000 #000000 #000000 #000000
+client.urgent            #FFFFFF    #FFFFFF #FFFFFF  #FFFFFF #FFFFFF
+client.placeholder        #000000 #000000 #000000 #000000
+
+
+# Set background color with opacity
+client.background        ${if (focused) { #000000 } else { rgba(0, 0, 0, 0.1) }}
+
+
+
+
