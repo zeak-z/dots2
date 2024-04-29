@@ -1,7 +1,6 @@
-@theme "/home/zeakz/.config/rofi/themes/simple-theme.rasi"
-@import "/home/zeakz/.config/rofi/themes/simple-theme.rasi"
+@theme "~/.config/rofi/themes/simple-theme.rasi"
 configuration {
-    modi: "drun, -modi  :'/home/zeakz/.config/rofi/rofi-time', p:'/home/zeakz/.config/rofi/rofi-power-menu'";
+    modi: "drun, -modi  :'.config/rofi/rofi-time', p:'.config/rofi/rofi-power-menu'";
     width: 33;
     lines: 1;
     columns: 1;
